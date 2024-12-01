@@ -1,16 +1,6 @@
 @font-face {
-    font-family: InterBold;
-    src: url(../fonts/InterBold.ttf);
-}
-
-@font-face {
     font-family: InterLight;
     src: url(../fonts/InterLight.ttf);
-}
-
-@font-face {
-    font-family: InterRegular;
-    src: url(../fonts/InterRegular.ttf);
 }
 
 *{
@@ -24,225 +14,207 @@ html{
     font-family: InterLight;
 }
 
-body{
-    margin: 0 auto;
-    height: 500vh;
-}
-
-header{
-    text-align: center;
-    margin-bottom: 150px;
-}
-
 a{
     text-decoration: none;
-    font-family: InterRegular;
     color: black;
 }
 
-nav{
-    display: flex;
-    justify-content: space-between;
-    padding: 2vh 5vw;
-    margin-bottom: 20px;
+header{
     position: fixed;
     top: 0;
-    left: 0;
-    right: 0;
-    background-color: aliceblue;
-    box-shadow: 1vh 0 1vh;
+    background-color: antiquewhite;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+    z-index: 1;
 }
-
-nav article{
+nav{
+    width: 100vw;
+    padding: 1vh 5vw;
     display: flex;
-    gap: 2vw;
-    font-size: 1.4rem;
+    align-items: center;
+    justify-content: space-between;
 }
-
-nav h2{
-    font-family: InterBold;
+.nav1 a{
+    font-size: 1.3rem;
+    margin-right: 2vw;
+}
+.nav5{
     font-size: 2.4rem;
-    padding-right: 8vw;
+    position: fixed;
+    top: 1vh;
+    left: 50%;
+    transform: translateX(-50%);
 }
-
-.getstarted{
-    padding: 5px 25px;
+.nav6{
+    padding: 5px 40px;
+    font-size: 1.7rem;
     border: 1px solid black;
     border-radius: 5px;
-    font-size: 1.4rem;
+}
+a:hover{
+    font-weight: 900;
+}
+.nav6:hover{
+    background-color: black;
+    color: rgb(238, 241, 16);
 }
 
-.group{
-    height: 60vh;
-    margin-top: 100px;
-}
-.group h3{
+/* !main! */
+
+h1 {
     font-size: 3.9rem;
+    text-align: center;
+    margin-top:7vh;
     font-weight: 100;
-    margin-bottom: 1vh;
+}
+.group{
+    width: 100vw;
+    margin-bottom: 100px;
+}
+.pfeil{
+    width: 3vw;
+    position: sticky;
+    left: 95vw;
+    top: 10vh;
 }
 
-.group article{
-    background-image: url(../img/1group.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
-    height: 100%;
-}
+/* -pricing- */
 
-.money, .hase, .girl{
+.text, .deliverables, .work{
+    padding: 0 10vw 0 10vw;
     display: flex;
+    align-items: center;
+    margin-bottom: 100px;
 }
-
-.money{
-    width: 100%;
+.wewill{
     font-size: 2.1rem;
-    justify-content: center;
-    gap: 5vw;
+    width: 55%;
+    margin-right: 50px;
 }
-
-.money1, .money2{
-    max-width: 50%;
-}
-
-.bigmoney{
-    font-family: InterBold;
+.dollar{
     font-size: 6.1rem;
+    font-weight: 900;
 }
-
-.textmoney{
+.flatrate{
     font-size: 2rem;
-    color: #9FA2A7;
-}
-
-.hase, .girl, .money{
-    padding: 0vh 10vw;
-    margin-bottom: 100px;
-    align-items: center;
-}
-
-
-
-.hase article, .girl article{
     width: 50%;
-    text-align: start;
 }
 
-.hase img{
-    position: relative;
-    left: 2.5vw;
-    z-index: -1;
-    width: 100%;
-}
+/* -Section:deliverables- */
 
-.hase h1{
-    font-size: 5.5rem;
-    margin-bottom: 60px;
-}
 
-.hase h3{
-    font-size: 2.3rem;
-    margin-bottom: 25px;
+.girl{
+    width: 50%;
+    margin-right: -3.5vw;
 }
-
-.hase p{
-    font-size: 2.1rem;
-    margin-bottom: 25px;
-}
-
-.girl h1{
-    font-size: 5rem;
-}
-
-.girl ol li{
-    font-size: 1.7rem;
-    color: #9FA2A7;
-}
-
-.girl p{
-    font-size: 1.6rem;
-    color: #9FA2A7;
-}
-
-.girl h1, .girl ol{
-    margin-bottom: 16px;
-}
-
 .girl img{
-    width: 100%;
+    max-width: 100%;
+    z-index: -1;
 }
-
-.kritik{
-    text-align: center;
-    margin-bottom: 100px;
+.text2{
+    width: 50%;
+    z-index: 0;
 }
-
-.kritik h1{
-    font-size: 5rem;
-    margin: 40px;
+.text2 h2{
+    font-size: 5.5rem;
+    margin-bottom: 5vh;
 }
-
-.kritik p{
-    font-size: 1.5rem;
+.text2 h3, .unlike, .evaluate, ul, .work h2{
+    margin-bottom: 2.5vh;
+}
+.text2 h3{
+    font-size: 2.3rem;
+}
+.unlike, .evaluate, .provide, ul, .work p, .critical p, .flatrate, .average, .after, .according{
     color: #9FA2A7;
 }
+.unlike, .evaluate{
+    font-size: 2.1rem;
+}
+.provide{
+    font-size: 1.9rem;
+}
 
-.fill{
-    margin-bottom: 16px;
+/* -section:work/bigGirl- */
+
+.work{
+    margin-left: 5vw;
+}
+.text3{
+    width: 40%;
+    margin-right: 5vw;
+}
+.beautiful{
+    width: 60%;
+}
+.beautiful img{
+    max-width: 100%;
+}
+ul{
+    list-style: none;
+    margin-left: 2vw;
+    font-size: 1.5rem;
+}
+.work h2{
+    font-size: 5rem;
+}
+.work p{
     font-size: 1.6rem;
 }
 
-.relativ{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 80%;
-    margin: 0 auto;
+/* -Section:Critique! */
+
+.critical{
+    text-align: center;
     margin-bottom: 100px;
 }
-.bigguy{
-    width: 700px;
-    height: 200px;
-    background-image: url(../img/4Prozent28.png);
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
+.critical h2{
+    font-size: 5rem;
+    margin-bottom: 5vh;
 }
-
-.bigguy1{
+.critical p{
+    font-size: 1.6rem;
+}
+.theone{
+    margin-bottom: 2.5vh;
+}
+.twentyeight{
+    width: 70%;
+    margin-left: 10vw;
+    z-index: -2;
+    margin-bottom: 2.5rem;
+}
+.twentyeight img{
+    max-width: 100%;
+}
+.text4{
+    margin-left: 25vw;
     font-size: 2rem;
-    color: #9FA2A7;
-    margin-bottom: 20px;
 }
-
-.bigguy3{
-    background-image: url(../img/5bigguy.png);
-    background-size: contain;
-    background-size: cover;
-    width: 220px;
-    height: 100px;
+.average, .after{
+    margin-bottom: 2.5vh;
+}
+.why img{
+    width: 40%;
     position: relative;
-    top: -110px;
-    right: -240px;
+    top: -25vh;
+    left: 40vw;
 }
 
-.question{
+/* !footer! */
+
+footer{
     text-align: center;
+}
+footer h2{
     font-size: 4.8rem;
     margin-bottom: 50px;
 }
-
-.question h1{
-    border-top: 1px solid black
-}
-
-.littleguy{
+footer section{
     display: flex;
-    align-items: baseline;
     justify-content: center;
+    align-items: baseline;
+    font-size: 1.6rem;
 }
-
-.littleguy img{
-    height: 140px;
-    width: 100px;
+footer img{
+    width: 5vw;
 }
-
